@@ -24,5 +24,5 @@ TEST(Encryptor, ShiftUpTest)
 
 TEST(Encryptor, MemeCryptionTest)
 {
-	EXPECT_EQ(encryptWithMemes("A meme a day\nkeeps the doctor away"), "B!nfnf!b!ebz\nWOW the SHREK away");
+	EXPECT_EQ(encryptWithMemes("A meme a day keeps the doctor away"), "WOW meme SUCH day SHREK doctor FEELSGOODMAN");
 }
