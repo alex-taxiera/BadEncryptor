@@ -50,7 +50,9 @@ string encryptEveryOther(string source)
 
 string encryptZeroAPress(string source)
 {
-    return "not yet implemented";
+	source.erase(std::remove(source.begin(), source.end(), 'a'), source.end());
+	source.erase(std::remove(source.begin(), source.end(), 'A'), source.end());
+    return source;
 }
 
 string encryptShiftUp(string source)
