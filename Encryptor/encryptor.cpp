@@ -10,3 +10,13 @@ string encryptZeroAPress(string source)
 {
     return "not yet implemented";
 }
+
+string encryptShiftUp(string source)
+{
+	return "not yet implemented";
+}
+
+string encryptZeroAPress(string source)
+{
+	return "not yet implemented";
+}
