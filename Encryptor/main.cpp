@@ -12,11 +12,7 @@ int main()
 	string result = encryptEveryOther(buffer); //should pass by reference but ill leave it to preserve tests
 
 	//overwrite file
-	ofstream output("testfile.txt", ofstream::out);
-	if (output.bad())
-		return 1;
-	output << result;
-	output.close();
+	writeFile("testfile.txt", result);
 
     return 0;
 }
