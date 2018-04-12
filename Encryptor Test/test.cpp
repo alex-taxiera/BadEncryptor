@@ -11,6 +11,9 @@ TEST(Encryptor, EveryOther)
 
 TEST(Encryptor, ZeroAPressRun)
 {
+	// function should take a string and return a string
+	// file IO can be a separate function
+
     EXPECT_EQ(encryptZeroAPress("Alex ate an apple"), "mfy!uf!o!qqmf");
 }
 
