@@ -2,6 +2,7 @@
 #define _HEADER
 
 #include <string>
+#include <algorithm>
 #include <sstream>
 #include <fstream>
 using std::string;
