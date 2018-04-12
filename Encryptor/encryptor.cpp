@@ -16,7 +16,7 @@ string encryptShiftUp(string source)
 	return "not yet implemented";
 }
 
-string encryptZeroAPress(string source)
+string encryptWithMemes(string source)
 {
 	return "not yet implemented";
 }
