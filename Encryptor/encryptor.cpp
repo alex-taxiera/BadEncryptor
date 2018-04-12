@@ -1,10 +1,4 @@
-#include <string>
-#include <sstream>
-#include <fstream>
-using std::string;
-using std::ifstream;
-using std::ofstream;
-using std::istringstream;
+#include "header.h"
 
 /*
 Usage:
