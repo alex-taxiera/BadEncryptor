@@ -2,8 +2,8 @@
 
 int main()
 {
-	//get file name from user
-	string buffer = readFile("testfile.txt");
+	string fileName = userInput();
+	string buffer = readFile(fileName);
 	if (buffer == "ERROR")
 	{
 		cout << "NO SUCH FILE\n";
@@ -12,11 +12,7 @@ int main()
 	string result = encryptEveryOther(buffer); //should pass by reference but ill leave it to preserve tests
 
 	//overwrite file
-	ofstream output("testfile.txt", ofstream::out);
-	if (output.bad())
-		return 1;
-	output << result;
-	output.close();
+	writeFile(fileName, result);
 
     return 0;
 }
