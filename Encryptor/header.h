@@ -3,7 +3,7 @@
 
 #include <string>
 
-using std::string;
+using std::string
 
 string encryptEveryOther(string source);
 string encryptZeroAPress(string source);

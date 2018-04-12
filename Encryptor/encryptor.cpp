@@ -1,6 +1,4 @@
-#include <string>
 #include "header.h"
-using std::string;
 
 string encryptEveryOther(string source)
 {
