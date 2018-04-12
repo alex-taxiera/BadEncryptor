@@ -55,10 +55,40 @@ string encryptZeroAPress(string source)
 
 string encryptShiftUp(string source)
 {
-	return "not yet implemented";
+    for (char &c : source)
+    {
+        c += 1;
+    }
+	return source;
 }
 
 string encryptWithMemes(string source)
 {
-	return "not yet implemented";
+    string memes[5] = {"WOW", "SUCH", "SHREK", "FEELSGOODMAN", "KAPPA"};
+    istringstream ss(source);
+    string word;
+    string result;
+    int wordNum = 0;
+    while (getline(ss, word, ' '))
+    {
+        if (wordNum != 0)
+        {
+            result += ' ';
+        }
+        if (wordNum % 2 != 0)
+        {
+            result += word;
+        }
+        else
+        {
+            int index = wordNum / 2;
+            while (index > memes->size())
+            {
+                index -= memes->size();
+            }
+            result += memes[index];
+        }
+        wordNum++;
+    }
+	return result;
 }
