@@ -6,7 +6,7 @@ TEST(Encryptor, EveryOther)
     // function should take a string and return a string
     // file IO can be a separate function
   
-    EXPECT_EQ(encryptEveryOther("alex\nkeeps the doctor away") , "mfy\nWOW the SHREK away");
+    EXPECT_EQ(encryptEveryOther("alex\nkeeps the doctor away") , "mfy\nWOW the SUCH away");
 }
 
 TEST(Encryptor, ZeroAPressRun)

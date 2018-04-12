@@ -3,9 +3,20 @@
 int main()
 {
 	//get file name from user
-	//read file into a string
-	string result = "test string until\nfile parser is up\ncouple lines yo";
-	//result = encryptEveryOther(string)
-	//write result to file
+	string buffer = readFile("testfile.txt");
+	if (buffer == "ERROR")
+	{
+		cout << "NO SUCH FILE\n";
+		return 1;
+	}
+	string result = encryptEveryOther(buffer); //should pass by reference but ill leave it to preserve tests
+
+	//overwrite file
+	ofstream output("testfile.txt", ofstream::out);
+	if (output.bad())
+		return 1;
+	output << result;
+	output.close();
+
     return 0;
 }

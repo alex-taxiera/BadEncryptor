@@ -120,6 +120,8 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\.gitignore" />
+    <Text Include="original.txt" />
+    <Text Include="testfile.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />

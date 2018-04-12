@@ -26,6 +26,12 @@
     <Text Include="..\.gitignore">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="testfile.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="original.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
