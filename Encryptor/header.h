@@ -17,6 +17,7 @@ string encryptEveryOther(string source);
 string encryptZeroAPress(string source);
 string encryptShiftUp(string source);
 string encryptWithMemes(string source);
+string userInput();
 string readFile(string fileName);
 void writeFile(string fileName, string buffer);
 

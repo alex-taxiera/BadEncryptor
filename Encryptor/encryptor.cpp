@@ -1,5 +1,17 @@
 #include "header.h"
 
+string userInput()
+{
+    cout << "ENTER FILE NAME: ";
+    string input = "";
+    getline(cin, input);
+    if (input == "")
+    {
+        input = "0";
+    }
+    return input;
+}
+
 /*
 Usage:
     string buffer = readFile(fileName);
