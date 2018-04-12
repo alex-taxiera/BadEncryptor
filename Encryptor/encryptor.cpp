@@ -95,6 +95,7 @@ string encryptShiftUp(string source)
 
 string encryptWithMemes(string source)
 {
+    int memeLength = 5;
     string memes[5] = {"WOW", "SUCH", "SHREK", "FEELSGOODMAN", "KAPPA"};
     istringstream ss(source);
     string word;
@@ -113,9 +114,9 @@ string encryptWithMemes(string source)
         else
         {
             int index = wordNum / 2;
-            while (index > memes->size())
+            while (index > memeLength - 1)
             {
-                index -= memes->size();
+                index -= memeLength;
             }
             result += memes[index];
         }
