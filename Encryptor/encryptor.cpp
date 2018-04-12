@@ -42,10 +42,27 @@ void writeFile(string fileName, string buffer)
 
 string encryptEveryOther(string source)
 {
-	//cut out line
-	//if even line Remove A then shift up
-	//if odd line Meme it up
-    return "not yet implemented";
+	istringstream ss(source);
+	string line;
+	string result = "";
+	int i = 0;
+	while (getline(ss, line))
+	{
+		if (i % 2 == 0)
+		{
+			line = encryptZeroAPress(line);
+			line = encryptShiftUp(line);
+		}
+		else
+		{
+			line = encryptWithMemes(line);
+		}
+		result = result + line + '\n';
+		i += 1;
+	}
+	//remove the trailing newline
+	result.pop_back();
+    return result;
 }
 
 string encryptZeroAPress(string source)
